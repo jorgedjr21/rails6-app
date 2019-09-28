@@ -52,6 +52,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-      if: ${{job.build.status == 'success'}}
+      if: success()
       run: echo 'TESTE'
 
