@@ -53,6 +53,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       if: success()
+    - name: Release
       run: |
         echo 'TESTE'
 
