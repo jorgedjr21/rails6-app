@@ -28,15 +28,15 @@ jobs:
       run: sudo apt-get install libpq-dev
 
     - name: DB Configuration
-        env:
-          PGHOST: localhost
-          PGUSER: postgres
-          PGPORT: ${ { job.services.postgres.ports[5432] }}
-          RAILS_ENV: test
-        run: |
-          gem install bundler
-          bundle install --jobs 4 --retry 3
-          bin/rails db:setup
+      env:
+        PGHOST: localhost
+        PGUSER: postgres
+        PGPORT: ${ { job.services.postgres.ports[5432] }}
+        RAILS_ENV: test
+      run: |
+        gem install bundler
+        bundle install --jobs 4 --retry 3
+        bin/rails db:setup
 
     - name: Run tests
       env:
