@@ -50,8 +50,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
 
-      steps:
-      - uses: actions/checkout@v1
-        if: ${{job.build.status == 'success'}}
-        run: echo 'TESTE'
+    steps:
+    - uses: actions/checkout@v1
+      if: ${{job.build.status == 'success'}}
+      run: echo 'TESTE'
 
