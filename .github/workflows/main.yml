@@ -16,4 +16,4 @@ jobs:
     - name: Build and test with Rake
       run: |
         gem install bundler rspec
-        rspec
+        bundle exec rspec
