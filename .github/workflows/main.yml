@@ -55,5 +55,5 @@ jobs:
       if: success()
     - name: Release
       run: |
-        echo 'TESTE'
+        echo ${{jobs}}
 
