@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe UsersController, type: :controller do
   let!(:valid_params) {
     {
-      name: 'Test',
-      email: 'test@test.com'
+      name: 'NotRun',
+      email: 'not-run@test.com'
     }
   }
 
