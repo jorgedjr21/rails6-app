@@ -53,6 +53,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Release
-      run: |
-        echo 'TEST'
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: jorgedjr21/rails6:latest
+        username: ${{ secrets.DOCKERHUB_LOGIN }}
+        password: ${{ secrets.DOCKERHUB_PASWORD }}
 
