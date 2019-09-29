@@ -55,7 +55,7 @@ jobs:
     - name: Release
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: jorgedjr21/rails6:latest
+        name: jorgedjr21/rails6
         username: ${{ secrets.DOCKERHUB_LOGIN }}
         password: ${{ secrets.DOCKERHUB_PASWORD }}
 
