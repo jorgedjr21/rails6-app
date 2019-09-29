@@ -47,11 +47,6 @@ jobs:
       run: |
         bundle exec rspec
 
-on:
-  push:
-    branchs:
-      - master
-
   release:
     runs-on: ubuntu-latest
     needs: build
